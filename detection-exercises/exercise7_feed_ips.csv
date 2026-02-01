@@ -1,0 +1,11 @@
+indicator,type,threat_type,confidence,last_seen
+185.220.101.1,ip,tor_exit,high,2025-01-30
+23.129.64.130,ip,tor_exit,high,2025-01-30
+109.70.100.31,ip,tor_exit,high,2025-01-29
+45.33.32.156,ip,scanner,medium,2025-01-30
+198.51.100.100,ip,botnet_c2,high,2025-01-28
+203.0.113.50,ip,brute_force,medium,2025-01-30
+91.219.236.222,ip,malware_c2,high,2025-01-29
+185.56.80.65,ip,tor_exit,high,2025-01-30
+77.247.181.162,ip,proxy,low,2025-01-27
+195.123.226.243,ip,vpn_exit,low,2025-01-26

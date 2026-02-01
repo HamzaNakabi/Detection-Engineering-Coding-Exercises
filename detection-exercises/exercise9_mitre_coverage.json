@@ -1,0 +1,50 @@
+{
+  "detection_rules": [
+    {"id": "DET-001", "name": "Encoded PowerShell Command", "mitre_techniques": ["T1059.001"], "enabled": true},
+    {"id": "DET-002", "name": "Mimikatz Execution", "mitre_techniques": ["T1003.001", "T1003.002"], "enabled": true},
+    {"id": "DET-003", "name": "SSH Brute Force", "mitre_techniques": ["T1110.001", "T1110.003"], "enabled": true},
+    {"id": "DET-004", "name": "AWS Console Login Without MFA", "mitre_techniques": ["T1078.004"], "enabled": true},
+    {"id": "DET-005", "name": "Suspicious Network Scanning", "mitre_techniques": ["T1046"], "enabled": true},
+    {"id": "DET-006", "name": "Lateral Movement via PsExec", "mitre_techniques": ["T1021.002", "T1569.002"], "enabled": true},
+    {"id": "DET-007", "name": "Data Exfiltration via HTTPS", "mitre_techniques": ["T1041"], "enabled": true},
+    {"id": "DET-008", "name": "Scheduled Task Creation", "mitre_techniques": ["T1053.005"], "enabled": true},
+    {"id": "DET-009", "name": "Registry Run Key Modification", "mitre_techniques": ["T1547.001"], "enabled": true},
+    {"id": "DET-010", "name": "DCSync Attack", "mitre_techniques": ["T1003.006"], "enabled": false},
+    {"id": "DET-011", "name": "Kerberoasting", "mitre_techniques": ["T1558.003"], "enabled": true},
+    {"id": "DET-012", "name": "Pass the Hash", "mitre_techniques": ["T1550.002"], "enabled": true},
+    {"id": "DET-013", "name": "WMI Remote Execution", "mitre_techniques": ["T1047"], "enabled": true},
+    {"id": "DET-014", "name": "Suspicious DLL Loading", "mitre_techniques": ["T1055.001"], "enabled": true},
+    {"id": "DET-015", "name": "CloudTrail Logging Disabled", "mitre_techniques": ["T1562.008"], "enabled": true}
+  ],
+  "target_coverage": {
+    "description": "MITRE ATT&CK techniques we want to cover",
+    "techniques": [
+      {"id": "T1059.001", "name": "PowerShell", "tactic": "Execution"},
+      {"id": "T1059.003", "name": "Windows Command Shell", "tactic": "Execution"},
+      {"id": "T1059.004", "name": "Unix Shell", "tactic": "Execution"},
+      {"id": "T1003.001", "name": "LSASS Memory", "tactic": "Credential Access"},
+      {"id": "T1003.002", "name": "Security Account Manager", "tactic": "Credential Access"},
+      {"id": "T1003.006", "name": "DCSync", "tactic": "Credential Access"},
+      {"id": "T1110.001", "name": "Password Guessing", "tactic": "Credential Access"},
+      {"id": "T1110.003", "name": "Password Spraying", "tactic": "Credential Access"},
+      {"id": "T1078.004", "name": "Cloud Accounts", "tactic": "Initial Access"},
+      {"id": "T1046", "name": "Network Service Discovery", "tactic": "Discovery"},
+      {"id": "T1021.001", "name": "Remote Desktop Protocol", "tactic": "Lateral Movement"},
+      {"id": "T1021.002", "name": "SMB/Windows Admin Shares", "tactic": "Lateral Movement"},
+      {"id": "T1021.004", "name": "SSH", "tactic": "Lateral Movement"},
+      {"id": "T1041", "name": "Exfiltration Over C2 Channel", "tactic": "Exfiltration"},
+      {"id": "T1048", "name": "Exfiltration Over Alternative Protocol", "tactic": "Exfiltration"},
+      {"id": "T1053.005", "name": "Scheduled Task", "tactic": "Persistence"},
+      {"id": "T1547.001", "name": "Registry Run Keys", "tactic": "Persistence"},
+      {"id": "T1055.001", "name": "DLL Injection", "tactic": "Defense Evasion"},
+      {"id": "T1055.003", "name": "Thread Execution Hijacking", "tactic": "Defense Evasion"},
+      {"id": "T1047", "name": "Windows Management Instrumentation", "tactic": "Execution"},
+      {"id": "T1550.002", "name": "Pass the Hash", "tactic": "Lateral Movement"},
+      {"id": "T1558.003", "name": "Kerberoasting", "tactic": "Credential Access"},
+      {"id": "T1562.008", "name": "Disable Cloud Logs", "tactic": "Defense Evasion"},
+      {"id": "T1569.002", "name": "Service Execution", "tactic": "Execution"},
+      {"id": "T1087.001", "name": "Local Account Discovery", "tactic": "Discovery"},
+      {"id": "T1087.002", "name": "Domain Account Discovery", "tactic": "Discovery"}
+    ]
+  }
+}

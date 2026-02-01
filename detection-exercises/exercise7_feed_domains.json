@@ -1,0 +1,16 @@
+{
+  "feed_name": "malicious_domains",
+  "generated": "2025-01-30T00:00:00Z",
+  "indicators": [
+    {"domain": "evil-download.com", "threat_type": "malware_distribution", "confidence": 95, "last_seen": "2025-01-30"},
+    {"domain": "phishing-login.net", "threat_type": "phishing", "confidence": 90, "last_seen": "2025-01-30"},
+    {"domain": "c2-server.xyz", "threat_type": "command_control", "confidence": 85, "last_seen": "2025-01-29"},
+    {"domain": "cryptominer-pool.io", "threat_type": "cryptomining", "confidence": 80, "last_seen": "2025-01-28"},
+    {"domain": "data-exfil.ru", "threat_type": "data_theft", "confidence": 92, "last_seen": "2025-01-30"},
+    {"domain": "fake-update.com", "threat_type": "malware_distribution", "confidence": 88, "last_seen": "2025-01-29"},
+    {"domain": "ransomware-payment.onion.ws", "threat_type": "ransomware", "confidence": 98, "last_seen": "2025-01-30"},
+    {"domain": "botnet-controller.net", "threat_type": "botnet", "confidence": 91, "last_seen": "2025-01-28"},
+    {"domain": "credential-harvest.co", "threat_type": "phishing", "confidence": 87, "last_seen": "2025-01-27"},
+    {"domain": "exploit-kit.biz", "threat_type": "exploit_kit", "confidence": 93, "last_seen": "2025-01-29"}
+  ]
+}

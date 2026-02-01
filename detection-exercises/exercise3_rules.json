@@ -1,0 +1,76 @@
+{
+  "rules": [
+    {
+      "id": "RULE-001",
+      "name": "SSH Brute Force Attempt",
+      "description": "Multiple failed SSH login attempts",
+      "field": "event_type",
+      "operator": "equals",
+      "value": "ssh_login_failed",
+      "severity": "high"
+    },
+    {
+      "id": "RULE-002",
+      "name": "Suspicious Process Execution",
+      "description": "Known offensive tools executed",
+      "field": "process_name",
+      "operator": "in",
+      "value": ["nc", "ncat", "netcat", "nmap", "masscan", "mimikatz", "psexec"],
+      "severity": "critical"
+    },
+    {
+      "id": "RULE-003",
+      "name": "Encoded PowerShell Command",
+      "description": "PowerShell with encoded command detected",
+      "field": "command_line",
+      "operator": "contains",
+      "value": "EncodedCommand",
+      "severity": "high"
+    },
+    {
+      "id": "RULE-004",
+      "name": "Outbound Connection to Tor Exit",
+      "description": "Connection to known Tor exit node",
+      "field": "dest_ip",
+      "operator": "in",
+      "value": ["185.220.101.1", "185.56.80.65", "23.129.64.130", "109.70.100.31"],
+      "severity": "medium"
+    },
+    {
+      "id": "RULE-005",
+      "name": "Sensitive File Access",
+      "description": "Access to password or key files",
+      "field": "file_path",
+      "operator": "contains_any",
+      "value": ["/etc/passwd", "/etc/shadow", ".ssh/id_rsa", ".aws/credentials"],
+      "severity": "high"
+    },
+    {
+      "id": "RULE-006",
+      "name": "Privilege Escalation via Sudo",
+      "description": "Sudo command executed by non-admin user",
+      "field": "command_line",
+      "operator": "startswith",
+      "value": "sudo",
+      "severity": "medium"
+    },
+    {
+      "id": "RULE-007",
+      "name": "Data Exfiltration via Curl",
+      "description": "Curl POST to external IP",
+      "field": "command_line",
+      "operator": "regex",
+      "value": "curl.*-X\\s*POST.*http[s]?://(?!10\\.|192\\.168\\.|172\\.)",
+      "severity": "high"
+    },
+    {
+      "id": "RULE-008",
+      "name": "Cron Job Modification",
+      "description": "Crontab modified",
+      "field": "event_type",
+      "operator": "equals",
+      "value": "crontab_modified",
+      "severity": "medium"
+    }
+  ]
+}
